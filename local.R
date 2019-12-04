@@ -16,6 +16,11 @@ height <- c(153,160,144,157,159)
 student[["height"]] <- height
 student
 
+# Adding a new row-
+row <- data.frame(name = "ZoZo",age = 13,class = 8,height = 145)
+r1 <- rbind(student,row)
+r1
+
 # Exporting the detaframe `student` into a csv file-
 write.csv(student,"D:\\R CSV\\students.csv", row.names = TRUE)
 
@@ -25,5 +30,5 @@ head(flower)
 
 # All Datasets-
 head(vg)
-student
+r1
 head(flower)
